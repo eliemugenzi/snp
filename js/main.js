@@ -140,4 +140,12 @@ $("#link12").click(()=>{
   $('.active').removeClass('active');
   $('#link12').addClass('active');
 })
+
+
+
+//Typed feature...
+$('.typed').typed({
+  strings:["startups","startups and digital agencies"],
+
+})
 })
