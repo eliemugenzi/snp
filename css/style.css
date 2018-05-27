@@ -16,6 +16,11 @@ nav {
   width: 80%;
   top: 20px;
 }
+@media (max-width: 750px) {
+  .nav-menu {
+    transform: translateX(-50px);
+  }
+}
 .nav-menu {
   width: 100vw;
   height: 100vh;
@@ -127,7 +132,7 @@ nav {
 #more-about div {
   background: #F5F5F5;
   padding: 30px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #more-about div span {
   color: #ddd;
