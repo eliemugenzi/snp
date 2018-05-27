@@ -122,7 +122,12 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  margin: auto 15%;
+  padding: 20px;
+}
+#more-about div {
+  background: #F5F5F5;
+  padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
 }
 #more-about div span {
   color: #ddd;
@@ -249,7 +254,7 @@ nav {
 }
 #testimonials .test-grid .test-people a {
   text-decoration: none;
-  color: white;
+  color: #F7F7F7;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -260,7 +265,7 @@ nav {
   transform: scale(1.1);
 }
 #testimonials .test-grid .test-people a.active {
-  border-bottom: 2px solid white;
+  color: white;
   padding-bottom: 3px;
   margin-bottom: 20px;
 }
