@@ -117,7 +117,10 @@ nav {
   color: #fff;
   margin-bottom: 30px;
 }
-#about span {
+#about h1 {
+  font-size: 70px;
+}
+#about h1 span {
   color: #000;
 }
 #about article {
@@ -160,7 +163,7 @@ nav {
   position: relative;
   top: 50%;
   color: #ECECEC;
-  font-size: 35px;
+  font-size: 70px;
 }
 #projects .projects-list {
   position: relative;
@@ -205,6 +208,7 @@ nav {
 #clients h1 {
   text-align: center;
   color: #ECECEC;
+  font-size: 40px;
 }
 #clients h1 .grey {
   color: #ddd;
@@ -239,6 +243,7 @@ nav {
   color: #000;
   margin-top: 10%;
   margin-bottom: 130px;
+  font-size: 70px;
 }
 @media (max-width: 750px) {
   #testimonials .test-for-desktop {
@@ -283,8 +288,10 @@ nav {
 #contact {
   margin: auto 10%;
 }
-#contact h1 {
+#contact h1.contact-title {
   text-align: center;
+  color: #F7F7F7;
+  font-size: 70px;
 }
 #contact h2 {
   text-align: center;
