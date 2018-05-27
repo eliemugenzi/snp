@@ -32,6 +32,7 @@ $('#about-link').click(()=>{
     scrollTop:path
   },1000)
   $('.nav-menu').slideUp();
+  $('.toggle').toggleClass('open');
 })
 $('#projects-link').click(()=>{
   let path=$('#projects').offset().top;
@@ -39,6 +40,7 @@ $('#projects-link').click(()=>{
     scrollTop:path
   },1000)
   $('.nav-menu').slideUp();
+  $('.toggle').toggleClass('open');
 })
 
 $('#testimonials-link').click(()=>{
@@ -47,6 +49,7 @@ $('#testimonials-link').click(()=>{
     scrollTop:path
   },1000)
   $('.nav-menu').slideUp();
+  $('.toggle').toggleClass('open');
 })
 $('#contacts-link').click(()=>{
   let path=$('#contact').offset().top;
@@ -54,6 +57,7 @@ $('#contacts-link').click(()=>{
     scrollTop:path
   },1000)
   $('.nav-menu').slideUp();
+  $('.toggle').toggleClass('open');
 })
 
 
