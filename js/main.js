@@ -11,6 +11,8 @@ let quote9=$('#testi9').val()
 let quote10=$('#testi10').val()
 let quote11=$('#testi11').val()
 let quote12=$('#testi12').val()
+
+
 //Initially menu links are hidden...
  $('.nav-menu').hide();
 
@@ -63,85 +65,9 @@ $('#contacts-link').click(()=>{
 
 
 
-// Testimonials are set dynamically...
- $('.test-show').html(`<h1><q>${quote1}</q></h1>`);
- $('.test-show h1').addClass('faded');
- $('.active').removeClass('active');
- $("#link1").addClass('active');
-$("#link1").click(()=>{
-  $('.test-show').html(`<h1><q>${quote1}</q></h1>`);
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $("#link1").addClass('active');
+$('.person a').click(()=>{
+  $('.person p').slideToggle();
 })
-$("#link2").click(()=>{
-  $('.test-show').html(`<h1><q>${quote2}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link2').addClass('active');
-})
-$("#link3").click(()=>{
-  $('.test-show').html(`<h1><q>${quote3}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link3').addClass('active');
-})
-$("#link4").click(()=>{
-  $('.test-show').html(`<h1><q>${quote4}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link4').addClass('active');
-})
-$("#link5").click(()=>{
-  $('.test-show').html(`<h1><q>${quote5}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link5').addClass('active');
-})
-$("#link6").click(()=>{
-  $('.test-show').html(`<h1><q>${quote6}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link6').addClass('active');
-})
-$("#link7").click(()=>{
-  $('.test-show').html(`<h1><q>${quote7}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link7').addClass('active');
-})
-$("#link8").click(()=>{
-  $('.test-show').html(`<h1><q>${quote8}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link8').addClass('active');
-})
-$("#link9").click(()=>{
-  $('.test-show').html(`<h1><q>${quote9}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link9').addClass('active');
-})
-$("#link10").click(()=>{
-  $('.test-show').html(`<h1><q>${quote10}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link10').addClass('active');
-})
-$("#link11").click(()=>{
-  $('.test-show').html(`<h1><q>${quote11}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link11').addClass('active');
-})
-$("#link12").click(()=>{
-  $('.test-show').html(`<h1><q>${quote12}</q></h1>`).fadeIn();
-  $('.test-show h1').addClass('faded');
-  $('.active').removeClass('active');
-  $('#link12').addClass('active');
-})
-
-
 
 //Typed feature...
 $('.typed').typed({

@@ -121,7 +121,12 @@ nav {
   font-size: 70px;
 }
 #about h1 span {
-  color: #000;
+  color: #FFC117;
+}
+@media (max-width: 750px) {
+  #about h1 {
+    font-size: 40px;
+  }
 }
 #about article {
   position: relative;
@@ -134,6 +139,7 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   padding: 20px;
+  margin: auto 20%;
 }
 #more-about div {
   background: #F5F5F5;
@@ -141,10 +147,11 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #more-about div span {
-  color: #ddd;
+  color: #FFC117;
 }
 @media (max-width: 750px) {
   #more-about {
+    margin: auto 10%;
     display: block;
   }
   #more-about div {
@@ -162,7 +169,7 @@ nav {
   text-align: center;
   position: relative;
   top: 50%;
-  color: #ECECEC;
+  color: #FFC117;
   font-size: 70px;
 }
 #projects .projects-list {
@@ -207,7 +214,7 @@ nav {
 }
 #clients h1 {
   text-align: center;
-  color: #ECECEC;
+  color: #FFC117;
   font-size: 40px;
 }
 #clients h1 .grey {
@@ -237,22 +244,77 @@ nav {
   background: #252528;
   color: white;
 }
-#testimonials h1.title {
-  text-align: center;
-  position: relative;
-  color: #000;
-  margin-top: 10%;
-  margin-bottom: 130px;
-  font-size: 70px;
-}
 @media (max-width: 750px) {
   #testimonials .test-for-desktop {
     display: none;
+  }
+  #testimonials .test-for-mobile {
+    display: block;
   }
 }
 @media (min-width: 751px) {
   #testimonials .test-for-desktop {
     display: block;
+  }
+  #testimonials .test-for-mobile {
+    display: none;
+  }
+}
+#testimonials .test-for-mobile {
+  margin: auto 15%;
+}
+#testimonials h1.title {
+  text-align: center;
+  position: relative;
+  color: #FFC117;
+  margin-top: 10%;
+  margin-bottom: 130px;
+  font-size: 70px;
+}
+#testimonials .person {
+  margin-bottom: 20px;
+}
+#testimonials .person label {
+  cursor: pointer;
+  color: #ECECEC;
+  transition: .5s;
+}
+#testimonials .person input[type=radio] {
+  visibility: hidden;
+}
+#testimonials .person input[type=radio]:checked ~ p {
+  display: block;
+  animation: slideUp 2s both ease;
+}
+#testimonials .person input[type=radio]:checked ~ label {
+  color: white;
+  font-size: 20px;
+}
+#testimonials .person p {
+  display: none;
+  font-style: italic;
+  color: #FFC117;
+}
+#testimonials .person p:before {
+  content: '\201C';
+  color: #4d91b3;
+  font-size: 22px;
+  padding-left: 20px;
+}
+#testimonials .person p:after {
+  content: '\201D';
+  color: #4d91b3;
+  font-size: 22px;
+  padding-right: 20px;
+}
+@media (max-width: 750px) {
+  #testimonials h1.title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 750px) {
+  #testimonials .test-grid {
+    display: none;
   }
 }
 #testimonials .test-grid {
@@ -290,14 +352,14 @@ nav {
 }
 #contact h1.contact-title {
   text-align: center;
-  color: #F7F7F7;
+  color: #FFC117;
   font-size: 70px;
 }
 #contact h2 {
   text-align: center;
 }
 #contact h2 span {
-  color: #F7F7F7;
+  color: #FFC117;
 }
 #contact .wrapper {
   display: grid;
@@ -376,5 +438,13 @@ nav {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }
