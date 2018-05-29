@@ -7,6 +7,8 @@
 body {
   font-family: 'Cabin', sans-serif;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 nav {
   margin: auto 10%;
@@ -15,6 +17,9 @@ nav {
   position: fixed;
   width: 80%;
   top: 20px;
+}
+section {
+  margin: 0;
 }
 @media (max-width: 750px) {
   .nav-menu {
@@ -40,7 +45,7 @@ nav {
 .nav-menu ul {
   list-style: none;
   padding: 30px;
-  position: relative;
+  position: absolute;
   margin: auto 10%;
   transform: translate(-10px, 10px);
 }
