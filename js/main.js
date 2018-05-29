@@ -19,9 +19,9 @@ let quote12=$('#testi12').val()
  $('.toggle').click(()=>{
    if($(document).scrollTop()>50){
      let path=$('#home').offset().top;
-     $('body,html').animate({
+  /*   $('body,html').animate({
        scrollTop:path
-     },1000)
+     },1000)*/
    }
    $('.nav-menu').slideToggle(1000);
    $('.toggle').toggleClass('open');

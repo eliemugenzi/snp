@@ -22,11 +22,14 @@ nav {
   }
 }
 .nav-menu {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  margin: auto 20%;
+  margin: 0;
   z-index: 999;
-  position: absolute;
+  position: fixed;
+  background: #fff;
+  top: 10%;
+  right: 0%;
 }
 @media (max-width: 750px) {
   .nav-menu ul {
@@ -36,19 +39,23 @@ nav {
 }
 .nav-menu ul {
   list-style: none;
-  padding: 10px;
+  padding: 30px;
   position: relative;
   top: 20%;
   left: 50%;
   margin: auto 10%;
   transform: translate(-10px, 10px);
 }
+.nav-menu ul li {
+  margin-bottom: 30px;
+}
 .nav-menu ul li a {
   text-decoration: none;
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
   font-weight: bold;
   transition: .5s;
-  color: black;
+  color: #FFC117;
   cursor: pointer;
 }
 .nav-menu ul li a:hover {
@@ -109,6 +116,9 @@ nav {
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
+}
+#home .intro h1 span {
+  color: #FFC117;
 }
 #about {
   width: 100vw;
