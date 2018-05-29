@@ -39,22 +39,27 @@ nav{
   background: #fff;
   top:10%;
   right:0%;
-  @media(max-width:750px){
+  @media(min-width:750px){
     ul{
-      left:50%;
-      top:50%;
+       top:20%;
+       left:50%;
     }
   }
   ul{
     list-style: none;
     padding: 30px;
     position: relative;
-    top:20%;
-    left:50%;
+    //top:20%;
+    //left:50%;
     margin:auto 10%;
   transform: translate(-10px,10px);
     li{
       margin-bottom: 30px;
+      @media(max-width:750px){
+        a{
+          font-size: 20px;
+        }
+      }
       a{
         text-decoration: none;
         text-transform: uppercase;
