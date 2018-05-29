@@ -47,7 +47,7 @@ section {
   padding: 30px;
   position: absolute;
   margin: auto 10%;
-  transform: translate(-10px, 10px);
+  transform: translate(-30px, 10px);
 }
 .nav-menu ul li {
   margin-bottom: 30px;
@@ -163,6 +163,13 @@ section {
   background: #F5F5F5;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#more-about div h3 {
+  cursor: pointer;
+  transition: .5s;
+}
+#more-about div h3:hover {
+  color: #FFC117;
 }
 #more-about div span {
   color: #FFC117;
