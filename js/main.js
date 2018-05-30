@@ -27,6 +27,12 @@ let quote12=$('#testi12').val()
    $('.toggle').toggleClass('open');
  })
 
+ $('.brand').click(()=>{
+   let path=$('#home').offset().top;
+   $('body,html').animate({
+     scrollTop:path
+   },1000);
+ });
 //Scroll animation implementation...
 $('#about-link').click(()=>{
   let path=$('#about').offset().top;
