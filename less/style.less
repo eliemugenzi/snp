@@ -184,7 +184,7 @@ section{
     transform:translate(-50%,-50%);
     h1{
       span{
-        color:@yellow-color;
+        color:lighten(black,30%);
       }
     }
   }
@@ -251,6 +251,48 @@ section{
   }
 }
 
+
+//Our Team...
+#team{
+  width:100vw;
+  margin-top:30px;
+  h1{
+    color:lighten(black,10%);
+    text-align: center;
+  }
+  @media(max-width:750px){
+    .team-grid{
+      display: block;
+      .team-member{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .team-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    margin:auto 7%;
+    .team-member{
+      position: relative;
+      background: @lighter-bg;
+      padding:10px;
+      transition: .5s;
+      &:hover{
+        background: @yellow-color;
+        transform: scale(1.1);
+        z-index:22;
+      }
+      img{
+        position: relative;
+        width:100%;
+        height: 200px;
+        margin-bottom:10px;
+      }
+    }
+  }
+
+}
 //Projects ...
 
 #projects{
@@ -276,6 +318,9 @@ section{
       margin-bottom: 30%;
       transition: .5s;
       position: relative;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap:20px;
       @media(max-width: 750px){
         .project{
           width: 100%;
@@ -290,14 +335,7 @@ section{
         height: 100%;
       }
       .project-desc{
-        position: absolute;
-        top:70%;
-        left:10%;
-        right:10%;
-        color:@light-title;
-        background: @dark-bg;
-        opacity: .3;
-        padding: 20px;
+        padding: 40px;
       }
       @media(max-width:750px){
         .project-desc{
