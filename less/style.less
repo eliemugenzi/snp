@@ -13,19 +13,22 @@
 @yellow-color:#FFC117;
 
 
+
+//Default body styles...
 body{
   font-family:@font-family;
   overflow-x: hidden;
   margin:0;
   padding:0;
 }
+
 // Top navigation...
 nav{
   margin:0;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  width: 80%;
+  width: 90%;
   padding:20px;
   top:20px;
   z-index:1000;
@@ -47,6 +50,12 @@ nav{
   }
 }
 
+@media(min-width:751px){
+  nav{
+    width:95%;
+  }
+}
+//All sections by default...
 section{
   margin:0;
 }
@@ -59,6 +68,8 @@ section{
     }
   }
 }
+
+//Navigation menu...
 .nav-menu{
   width:100vw;
   height: 100vh;
@@ -78,6 +89,7 @@ section{
     position: absolute;
     top:40%;
     left:20%;
+    transform: translateY(-20px);
   }
   @media(min-width:751px){
     ul{
@@ -121,9 +133,8 @@ section{
     }
   }
 }
-.fa{
-  .text-color(@light-bg);
-}
+
+// Hamburger menu...
 .toggle{
   top:30%;
   position: relative;
@@ -173,8 +184,10 @@ section{
  width:50px;
  height: 5px;
 }
-// Home section ...
 
+
+
+// Home section ...
 #home{
   width: 100vw;
   height: 100vh;
@@ -191,6 +204,8 @@ section{
   }
 }
 
+
+//About section...
 #about{
   width: 100vw;
   height: 100vh;
@@ -219,6 +234,8 @@ section{
 
   }
 }
+
+// Services...
 #more-about{
   display: grid;
   grid-template-columns:repeat(2,1fr);
@@ -268,15 +285,12 @@ section{
     margin:auto 7%;
     .team-member{
       position: relative;
-      background: @lighter-bg;
       padding:10px;
       transition: .5s;
       &:hover{
         background: @yellow-color;
-        transform: scale(1.1);
+        transform: scale(1.05);
         z-index:22;
-        box-shadow:0 5px 10px rgba(0,0,0,.3);
-        border-radius:6px;
       }
       img{
         position: relative;
@@ -296,8 +310,9 @@ section{
   }
 
 }
-//Projects ...
 
+
+//Projects ...
 #projects{
   background:@lighter-bg;
   .project-title{
@@ -315,6 +330,12 @@ section{
     position: relative;
     left:10%;
     right: 10%;
+    @media(max-width: 750px){
+      .project{
+        width: 100%;
+        height: 100%;
+      }
+    }
     .project{
       width: 80%;
       height: 80%;
@@ -324,12 +345,7 @@ section{
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-gap:20px;
-      @media(max-width: 750px){
-        .project{
-          width: 100%;
-          height: 100%;
-        }
-      }
+
       &:hover{
         transform: scale(.9);
       }
@@ -340,15 +356,22 @@ section{
       .project-desc{
         padding: 40px;
       }
-      @media(max-width:750px){
+
+    }
+    @media(max-width:750px){
+      .project{
+        display: block;
+        background: lighten(@lighter-bg,15%);
         .project-desc{
-          display: none;
+          margin-top:10px;
         }
       }
     }
   }
 }
 
+
+//Clients section...
 #clients{
   h1{
     text-align: center;
@@ -422,6 +445,11 @@ section{
     margin-bottom: 130px;
     font-size: 70px;
   }
+  @media(max-width:750px){
+    h1.title{
+      padding-top:35%;
+    }
+  }
   .person{
     margin-bottom: 20px;
     label{
@@ -490,7 +518,7 @@ section{
         }
       }
       a.active{
-        color: white;;
+        color: white;
         padding-bottom:3px;
         margin-bottom:20px;
       }
@@ -501,6 +529,8 @@ section{
   }
 }
 
+
+//Contact section....
 #contact{
   margin: auto 10%;
   h1.contact-title{

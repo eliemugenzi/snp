@@ -52,7 +52,7 @@ $('#projects-link').click(()=>{
 })
 
 $('#testimonials-link').click(()=>{
-  let path=$('#testimonials').offset().top;
+  let path=$('#testimonials .title').offset().top;
   $('body,html').animate({
     scrollTop:path
   },1000)
