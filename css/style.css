@@ -284,6 +284,11 @@ section {
   padding-bottom: 10px;
   color: #52535B;
 }
+@media (max-width: 750px) {
+  #clients h1 {
+    padding-bottom: 5px;
+  }
+}
 #clients .clients-grid {
   display: grid;
   margin: auto 10%;
