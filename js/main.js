@@ -77,7 +77,7 @@ $('.person a').click(()=>{
 
 //Typed feature...
 $('.typed').typed({
-  strings:["startups","startups and digital agencies"],
+  strings:["we","we do",'we do best'],
 
 })
 })
