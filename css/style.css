@@ -164,8 +164,16 @@ section {
   left: 40%;
   transform: translate(-50%, -50%);
 }
+#home .intro h1 {
+  font-size: 70px;
+}
 #home .intro h1 span {
   color: #4d4d4d;
+}
+@media (max-width: 750px) {
+  #home .intro h1 {
+    font-size: 40px;
+  }
 }
 #about {
   width: 100vw;
