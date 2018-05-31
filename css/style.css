@@ -46,6 +46,10 @@ section {
   .nav-menu {
     transform: translateX(-50px);
     display: block;
+    padding-top: 40%;
+  }
+  .nav-menu ul {
+    transform: translateY(30%);
   }
   .nav-menu img {
     display: none;
@@ -81,7 +85,10 @@ section {
 }
 @media (max-width: 750px) {
   .nav-menu ul {
-    transform: translateX(15px);
+    position: relative;
+    top: 30%;
+    left: 20%;
+    transform: translateX(15px) translateY(50%);
     transform-origin: left;
   }
 }
@@ -124,6 +131,9 @@ section {
 }
 .toggle.open {
   transform: rotate(-45deg);
+}
+.toggle.open ~ .brand {
+  display: none;
 }
 .line-menu {
   background-color: #000;
@@ -475,10 +485,13 @@ section {
   text-align: center;
   color: #52535b;
   font-size: 70px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 @media (max-width: 750px) {
   #contact h1.contact-title {
     font-size: 40px;
+    transform: translateY(20px);
   }
 }
 #contact h2 {

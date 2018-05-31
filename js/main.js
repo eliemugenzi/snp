@@ -56,7 +56,12 @@ $('#contacts-link').click(()=>{
   $('.toggle').toggleClass('open');
 })
 
-
+if($('.toggle').hasClass('open')){
+  $('brand').fadeOut();
+}
+else{
+  $('.brand').fadeIn();
+}
 
 
 $('.person a').click(()=>{
