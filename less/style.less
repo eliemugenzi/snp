@@ -274,19 +274,23 @@ section{
 #team{
   margin-top:30px;
   h1{
-    color:lighten(black,10%);
+    color:@dark-bg;
     text-align: center;
+    font-size:70px;
   }
 
   .team-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap:10px;
+    grid-gap:30px;
     margin:auto 7%;
     .team-member{
       position: relative;
-      padding:10px;
       transition: .5s;
+      h3,p{
+        margin: auto 15%;
+        margin-bottom: 10px;
+      }
       &:hover{
         background: @yellow-color;
         transform: scale(1.05);
@@ -322,7 +326,7 @@ section{
       text-align: center;
       position: relative;
       top:50%;
-      color: @yellow-color;
+      color: @dark-bg;
       font-size: 70px;
     }
   }
@@ -375,21 +379,17 @@ section{
 #clients{
   h1{
     text-align: center;
-    color: @yellow-color;
+    color: @dark-bg;
     font-size: 40px;
 
 
     .grey{
-      color:#ddd;
+      color:#000;
     }
     .underline{
-      border-bottom:2px solid @dark-bg;
-      padding-bottom: 10px;
-      color:#52535B;
+      color:@yellow-color;
     }
-    @media(max-width:750px){
-      padding-bottom: 5px;
-    }
+
   }
 
 
@@ -442,6 +442,7 @@ section{
     position:relative;
     color:@yellow-color;
     margin-top:10%;
+    padding-top:20%;
     margin-bottom: 130px;
     font-size: 70px;
   }
@@ -535,7 +536,7 @@ section{
   margin: auto 10%;
   h1.contact-title{
     text-align:center;
-    color: @yellow-color;
+    color: @dark-bg;
     font-size: 70px;
   }
   @media(max-width:750px){
@@ -546,7 +547,7 @@ section{
   h2{
     text-align: center;
     span{
-      color:@yellow-color;
+      color:@dark-bg;
     }
   }
   .wrapper{
@@ -609,6 +610,24 @@ section{
           }
         }
 
+      }
+    }
+  }
+
+  #footer{
+    width:100vw;
+    height:100vh;
+    background:url('../img/weadd-bg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    .footer-text{
+      position: absolute;
+      top:25%;
+      left:60%;
+      h1{
+        span{
+          color:@yellow-color;
+        }
       }
     }
   }

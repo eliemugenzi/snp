@@ -1,41 +1,24 @@
 $(document).ready(()=>{
-let quote1=$('#testi1').val()
-let quote2=$('#testi2').val()
-let quote3=$('#testi3').val()
-let quote4=$('#testi4').val()
-let quote5=$('#testi5').val()
-let quote6=$('#testi6').val()
-let quote7=$('#testi7').val()
-let quote8=$('#testi8').val()
-let quote9=$('#testi9').val()
-let quote10=$('#testi10').val()
-let quote11=$('#testi11').val()
-let quote12=$('#testi12').val()
-
-
 //Initially menu links are hidden...
  $('.nav-menu').hide();
 
  $('.toggle').click(()=>{
-   if($(document).scrollTop()>50){
-     let path=$('#home').offset().top;
-  /*   $('body,html').animate({
-       scrollTop:path
-     },1000)*/
-   }
    $('.nav-menu').slideToggle(1000);
    $('.toggle').toggleClass('open');
  })
 
+//Scroll animation implementation...
  $('.brand').click(()=>{
    let path=$('#home').offset().top;
+   console.log("Home",path);
    $('body,html').animate({
      scrollTop:path
    },1000);
  });
-//Scroll animation implementation...
+
 $('#about-link').click(()=>{
   let path=$('#about').offset().top;
+  console.log("about",path);
   $('body,html').animate({
     scrollTop:path
   },1000)
@@ -44,6 +27,7 @@ $('#about-link').click(()=>{
 })
 $('#projects-link').click(()=>{
   let path=$('#projects').offset().top;
+  console.log("Projects",path);
   $('body,html').animate({
     scrollTop:path
   },1000)
@@ -53,14 +37,18 @@ $('#projects-link').click(()=>{
 
 $('#testimonials-link').click(()=>{
   let path=$('#testimonials .title').offset().top;
+  console.log("Testimonials",path);
+  $('#home,#about,#projects').hide();
   $('body,html').animate({
     scrollTop:path
   },1000)
   $('.nav-menu').slideUp();
+  $('#home,#about,#projects').show();
   $('.toggle').toggleClass('open');
 })
 $('#contacts-link').click(()=>{
   let path=$('#contact').offset().top;
+  console.log("Contacts",path);
   $('body,html').animate({
     scrollTop:path
   },1000)
@@ -80,4 +68,7 @@ $('.typed').typed({
   strings:["we","we do",'we do best'],
 
 })
+
+
+
 })

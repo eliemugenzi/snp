@@ -229,19 +229,24 @@ section {
   margin-top: 30px;
 }
 #team h1 {
-  color: #1a1a1a;
+  color: #52535b;
   text-align: center;
+  font-size: 70px;
 }
 #team .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 30px;
   margin: auto 7%;
 }
 #team .team-grid .team-member {
   position: relative;
-  padding: 10px;
   transition: .5s;
+}
+#team .team-grid .team-member h3,
+#team .team-grid .team-member p {
+  margin: auto 15%;
+  margin-bottom: 10px;
 }
 #team .team-grid .team-member:hover {
   background: #FFC117;
@@ -273,7 +278,7 @@ section {
   text-align: center;
   position: relative;
   top: 50%;
-  color: #FFC117;
+  color: #52535b;
   font-size: 70px;
 }
 #projects .projects-list {
@@ -318,21 +323,14 @@ section {
 }
 #clients h1 {
   text-align: center;
-  color: #FFC117;
+  color: #52535b;
   font-size: 40px;
 }
 #clients h1 .grey {
-  color: #ddd;
+  color: #000;
 }
 #clients h1 .underline {
-  border-bottom: 2px solid #52535b;
-  padding-bottom: 10px;
-  color: #52535B;
-}
-@media (max-width: 750px) {
-  #clients h1 {
-    padding-bottom: 5px;
-  }
+  color: #FFC117;
 }
 #clients .clients-grid {
   display: grid;
@@ -377,6 +375,7 @@ section {
   position: relative;
   color: #FFC117;
   margin-top: 10%;
+  padding-top: 20%;
   margin-bottom: 130px;
   font-size: 70px;
 }
@@ -466,7 +465,7 @@ section {
 }
 #contact h1.contact-title {
   text-align: center;
-  color: #FFC117;
+  color: #52535b;
   font-size: 70px;
 }
 @media (max-width: 750px) {
@@ -478,7 +477,7 @@ section {
   text-align: center;
 }
 #contact h2 span {
-  color: #FFC117;
+  color: #52535b;
 }
 #contact .wrapper {
   display: grid;
@@ -539,6 +538,21 @@ section {
   top: -25px;
   color: lightblue;
   font-size: 14px;
+}
+#contact #footer {
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/weadd-bg.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#contact #footer .footer-text {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+}
+#contact #footer .footer-text h1 span {
+  color: #FFC117;
 }
 @media (max-width: 750px) {
   #contact .wrapper {
