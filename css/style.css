@@ -58,7 +58,7 @@ section {
   z-index: 999;
   position: fixed;
   background: #fff;
-  top: 15%;
+  top: 0;
   transform: translateX(0%);
   transform-origin: right;
   display: grid;
