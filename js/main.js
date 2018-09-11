@@ -1,6 +1,6 @@
+$(".nav-menu").hide();
 $(document).ready(() => {
   //Initially menu links are hidden...
-  $(".nav-menu").hide();
 
   $(".toggle").click(() => {
     $(".nav-menu").slideToggle(1000);
