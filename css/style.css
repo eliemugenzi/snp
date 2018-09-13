@@ -25,6 +25,9 @@ nav .brand img {
   float: left;
   margin-right: 10px;
 }
+nav .brand h1 {
+  font-family: "Montserrat", sans-serif;
+}
 nav .brand h1 span {
   color: #ffc117;
 }
@@ -170,6 +173,7 @@ section {
 }
 #home .intro h1 {
   font-size: 70px;
+  font-family: "Montserrat", sans-serif;
 }
 #home .intro h1 span {
   color: #4d4d4d;
@@ -187,6 +191,7 @@ section {
   margin-bottom: 30px;
 }
 #about h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 70px;
 }
 #about h1 span.yellow {
@@ -287,6 +292,7 @@ section {
   height: 100vh;
 }
 #projects .project-title h1 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   position: relative;
   top: 50%;
@@ -334,6 +340,7 @@ section {
   }
 }
 #clients h1 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #52535b;
   font-size: 40px;
@@ -383,6 +390,7 @@ section {
   margin: auto 15%;
 }
 #testimonials h1.title {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   position: relative;
   color: #ffc117;
@@ -476,6 +484,7 @@ section {
   margin: auto 10%;
 }
 #contact h1.contact-title {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #52535b;
   font-size: 70px;
@@ -584,7 +593,7 @@ section {
   height: 100vh;
   margin-top: 20px;
   color: #fff;
-  background: url(https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdc4d332eab7ae54a6449ef4918730f5&auto=format&fit=crop&w=750&q=80) no-repeat bottom / cover;
+  background: url(../img/weadd-studio.jpg) no-repeat bottom / cover;
   display: grid;
   place-content: center;
 }
